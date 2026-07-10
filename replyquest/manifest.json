@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ReplyQuest",
+  "version": "0.1.0",
+  "description": "A human-in-the-loop X engagement companion for campaign replies.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://x.com/*", "https://twitter.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
