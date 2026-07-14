@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "ReplyQuest",
-  "version": "0.1.0",
-  "description": "A human-in-the-loop X engagement companion for campaign replies.",
-  "permissions": ["storage"],
+  "name": "ReplyQuest Alpha",
+  "version": "0.2.0",
+  "description": "One-click reply assistant for X. Generate drafts, then review and post them yourself.",
+  "permissions": ["storage", "clipboardWrite"],
   "host_permissions": ["https://x.com/*", "https://twitter.com/*"],
   "content_scripts": [
     {
