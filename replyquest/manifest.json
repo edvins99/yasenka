@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ReplyQuest Alpha",
+  "version": "0.2.0",
+  "description": "One-click reply assistant for X. Generate drafts, then review and post them yourself.",
+  "permissions": ["storage", "clipboardWrite"],
+  "host_permissions": ["https://x.com/*", "https://twitter.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
